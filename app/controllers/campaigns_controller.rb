@@ -26,7 +26,7 @@ class CampaignsController < ApplicationController
   def update
     respond_to do |format|
       if @campaign.update(campaign_params)
-        format.json { render json: true }
+        format.html { render json: true }
       else
         format.json { render json: @campaign.errors, status: :unprocessable_entity }
       end
