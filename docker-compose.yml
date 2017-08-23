@@ -40,10 +40,9 @@ services:
     - box
 
   mailcatcher:
-    image: yappabe/mailcatcher
+    image: tophfr/mailcatcher
     ports:
-      - 1025:1025
-      - 1080:1080
+      - 1080:80
 
   box:
     image: busybox
